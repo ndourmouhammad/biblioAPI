@@ -13,6 +13,6 @@ class EmpruntSeeder extends Seeder
      */
     public function run(): void
     {
-        Emprunt::factory(8)->create();
+        Emprunt::factory(6)->create();
     }
 }
