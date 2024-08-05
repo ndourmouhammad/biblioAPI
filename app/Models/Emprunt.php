@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Emprunt extends Model
 {
     use HasFactory;
+
+    public function livre()
+    {
+        return $this->belongsTo(Livre::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
